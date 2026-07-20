@@ -390,32 +390,54 @@ body.nav-open {
   margin: 0;
   padding: 0;
   display: grid;
-  gap: 0.75rem;
+  gap: 0;
 }
 
 .demo-list a {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 0.5rem 1rem;
-  padding: 1rem 0;
-  border-bottom: 1px solid rgba(20, 32, 26, 0.12);
+  display: grid;
+  gap: 0.3rem;
+  padding: 1.15rem 0;
   text-decoration: none;
   transition: color var(--transition);
+  position: relative;
+  padding-right: 1.5rem;
+}
+
+.demo-list li:not(:last-child) a {
+  border-bottom: 1px solid rgba(20, 32, 26, 0.12);
+}
+
+.demo-list a::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-muted);
+  font-weight: 600;
+  transition: color var(--transition), transform var(--transition);
 }
 
 .demo-list a:hover {
   color: var(--color-accent);
 }
 
+.demo-list a:hover::after {
+  color: var(--color-accent);
+  transform: translateY(-50%) translateX(3px);
+}
+
 .demo-list strong {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 400;
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
 }
 
 .demo-list span {
   color: var(--color-muted);
+  font-size: 0.9rem;
+  line-height: 1.4;
 }
 
 .how-list {
