@@ -1,6 +1,9 @@
 window.HUB_I18N = {
   ru: {
-    docTitle: "OG Frontend — лендинги HTML, Vue, React",
+    docTitle: "OG Frontend — лендинги HTML, Vue, React | Oxana Glasu, Бельцы",
+    metaDescription:
+      "Фронтенд-разработчик Oxana Glasu (Бельцы, Молдова): лендинги и UI на HTML, Vue и React под ключ. Демо, цены, удалённая работа.",
+    ogLocale: "ru_RU",
     navAbout: "Обо мне",
     navDemos: "Демо",
     navPrices: "Цены",
@@ -49,7 +52,10 @@ window.HUB_I18N = {
     footer: "OG Frontend · Oxana Glasu · Бельцы",
   },
   ro: {
-    docTitle: "OG Frontend — landing-uri HTML, Vue, React",
+    docTitle: "OG Frontend — landing-uri HTML, Vue, React | Oxana Glasu, Bălți",
+    metaDescription:
+      "Dezvoltatoare frontend Oxana Glasu (Bălți, Moldova): landing-uri și UI în HTML, Vue și React la cheie. Demo, prețuri, remote.",
+    ogLocale: "ro_RO",
     navAbout: "Despre mine",
     navDemos: "Demo",
     navPrices: "Prețuri",
@@ -98,7 +104,10 @@ window.HUB_I18N = {
     footer: "OG Frontend · Oxana Glasu · Bălți",
   },
   en: {
-    docTitle: "OG Frontend — HTML, Vue, React landings",
+    docTitle: "OG Frontend — HTML, Vue, React landings | Oxana Glasu, Bălți",
+    metaDescription:
+      "Frontend developer Oxana Glasu (Bălți, Moldova): turnkey landings and UI with HTML, Vue and React. Demos, pricing, remote work.",
+    ogLocale: "en_US",
     navAbout: "About",
     navDemos: "Demos",
     navPrices: "Pricing",

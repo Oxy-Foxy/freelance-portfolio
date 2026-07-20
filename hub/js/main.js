@@ -39,10 +39,27 @@ function setNavOpen(open) {
   if (!open) setDropdownOpen(false);
 }
 
+function setMeta(name, content, attr = "name") {
+  if (content == null) return;
+  let el = document.querySelector(`meta[${attr}="${name}"]`);
+  if (!el) {
+    el = document.createElement("meta");
+    el.setAttribute(attr, name);
+    document.head.appendChild(el);
+  }
+  el.setAttribute("content", content);
+}
+
 function applyI18n(lang) {
   const dict = window.HUB_I18N?.[lang] || window.HUB_I18N.ru;
   document.documentElement.lang = lang;
   document.title = dict.docTitle;
+  setMeta("description", dict.metaDescription);
+  setMeta("og:title", dict.docTitle, "property");
+  setMeta("og:description", dict.metaDescription, "property");
+  setMeta("og:locale", dict.ogLocale, "property");
+  setMeta("twitter:title", dict.docTitle);
+  setMeta("twitter:description", dict.metaDescription);
 
   document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");

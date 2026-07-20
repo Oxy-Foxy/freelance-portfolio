@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://freelance-portfolio-ten-psi.vercel.app/sitemap.xml
