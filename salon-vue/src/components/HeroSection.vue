@@ -27,7 +27,7 @@ const t = inject('t')
 <style scoped>
 .hero {
   position: relative;
-  min-height: 100svh;
+  min-height: clamp(26rem, 68svh, 36rem);
   display: grid;
   align-items: end;
 }
@@ -45,7 +45,7 @@ const t = inject('t')
   position: relative;
   z-index: 1;
   max-width: 36rem;
-  padding: var(--space-xl) clamp(1rem, 4vw, 2.5rem) var(--space-lg);
+  padding: var(--space-lg) clamp(1rem, 4vw, 2.5rem) var(--space-md);
   animation: fade-up 0.8s ease both;
 }
 
