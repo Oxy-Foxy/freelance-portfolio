@@ -6,8 +6,8 @@
   --color-accent-hover: #d46a32;
   --color-surface: #2a2119;
   --color-line: rgba(247, 241, 232, 0.14);
-  --font-display: "Libre Baskerville", Georgia, serif;
-  --font-body: "Manrope", "Segoe UI", sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 3rem;

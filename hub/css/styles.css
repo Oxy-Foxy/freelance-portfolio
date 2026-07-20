@@ -4,8 +4,8 @@
   --color-muted: #3f5348;
   --color-accent: #1f6b4f;
   --color-accent-hover: #185541;
-  --font-display: "Instrument Serif", Georgia, serif;
-  --font-body: "DM Sans", "Segoe UI", sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 3rem;

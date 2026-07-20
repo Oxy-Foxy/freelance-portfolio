@@ -6,8 +6,8 @@
   --color-accent: #c4785a;
   --color-accent-hover: #d48a6c;
   --color-line: rgba(244, 235, 230, 0.14);
-  --font-display: "Cormorant Garamond", Georgia, serif;
-  --font-body: "Outfit", "Segoe UI", sans-serif;
+  --font-display: "Montserrat", system-ui, sans-serif;
+  --font-body: "Montserrat", system-ui, sans-serif;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 3rem;
