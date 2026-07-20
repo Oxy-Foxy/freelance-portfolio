@@ -1,0 +1,7 @@
+node_modules
+dist
+salon-vue/dist
+cafe-react/dist
+.DS_Store
+*.local
+.vercel

@@ -1,0 +1,123 @@
+:root {
+  --color-bg: #1a1214;
+  --color-bg-soft: #24191c;
+  --color-ink: #f4ebe6;
+  --color-muted: #c4b0a8;
+  --color-accent: #c4785a;
+  --color-accent-hover: #d48a6c;
+  --color-line: rgba(244, 235, 230, 0.14);
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-body: "Outfit", "Segoe UI", sans-serif;
+  --space-sm: 1rem;
+  --space-md: 1.5rem;
+  --space-lg: 3rem;
+  --space-xl: 5rem;
+  --max: 68rem;
+  --radius: 0.25rem;
+  --transition: 0.25s ease;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-body);
+  color: var(--color-ink);
+  background:
+    radial-gradient(ellipse 70% 45% at 90% 10%, #3a2428 0%, transparent 55%),
+    linear-gradient(180deg, var(--color-bg) 0%, #120d0f 100%);
+  line-height: 1.55;
+  min-height: 100svh;
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+#app {
+  min-height: 100svh;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius);
+  font-weight: 600;
+  text-decoration: none;
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+  transition: background var(--transition), transform var(--transition), border-color var(--transition);
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn--primary {
+  background: var(--color-accent);
+  color: #1a1214;
+}
+
+.btn--primary:hover {
+  background: var(--color-accent-hover);
+}
+
+.btn--ghost {
+  border-color: rgba(244, 235, 230, 0.45);
+  background: transparent;
+  color: var(--color-ink);
+}
+
+.btn--ghost:hover {
+  border-color: var(--color-ink);
+}
+
+.section {
+  padding: var(--space-xl) clamp(1rem, 4vw, 2.5rem);
+}
+
+.section__inner {
+  max-width: var(--max);
+  margin: 0 auto;
+}
+
+.section__title {
+  margin: 0 0 0.5rem;
+  font-family: var(--font-display);
+  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
+  font-weight: 600;
+}
+
+.section__lead {
+  margin: 0 0 var(--space-lg);
+  color: var(--color-muted);
+  max-width: 34rem;
+}
+
+.reveal {
+  opacity: 0;
+  transform: translateY(16px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.reveal.is-visible {
+  opacity: 1;
+  transform: none;
+}

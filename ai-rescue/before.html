@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BEFORE — AI-generated mess (demo)</title>
+  <style>
+    /* Intentionally bad: system fonts, card hero, clutter, broken mobile */
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #fff; }
+    .top { display: flex; gap: 8px; flex-wrap: nowrap; overflow: auto; padding: 8px; background: #6b21a8; color: #fff; font-size: 12px; }
+    .pill { background: #a855f7; border-radius: 999px; padding: 4px 10px; white-space: nowrap; }
+    .hero-wrap { padding: 24px; }
+    .hero-card {
+      display: flex; gap: 16px; border: 1px solid #ddd; border-radius: 16px;
+      box-shadow: 0 12px 40px rgba(0,0,0,.25), 0 0 30px rgba(168,85,247,.4);
+      padding: 16px; max-width: 900px; margin: 0 auto;
+    }
+    .hero-card img { width: 220px; height: 160px; object-fit: cover; border-radius: 12px; flex-shrink: 0; }
+    .badge { position: absolute; margin-left: 180px; margin-top: -8px; background: gold; padding: 4px 8px; font-size: 11px; border-radius: 999px; }
+    .stats { display: flex; gap: 24px; margin-top: 12px; font-size: 13px; }
+    .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; padding: 16px; }
+    .card { border: 1px solid #eee; border-radius: 12px; padding: 12px; box-shadow: 0 8px 24px rgba(0,0,0,.12); }
+    h1 { font-size: 28px; margin: 0 0 8px; }
+    .note { background: #fef3c7; padding: 12px; margin: 16px; border: 2px dashed #f59e0b; }
+    a.after { display: inline-block; margin: 16px; padding: 10px 14px; background: #0d6e6e; color: #fff; text-decoration: none; }
+  </style>
+</head>
+<body>
+  <p class="note"><strong>AI rescue — BEFORE.</strong> Typical vibe-coded landing: card hero, purple pills, stats in first viewport, system fonts, broken mobile grid. <a class="after" href="after.html">See AFTER →</a></p>
+  <div class="top">
+    <span class="pill">🔥 #1 in city</span>
+    <span class="pill">Open 24/7</span>
+    <span class="pill">-30% this week</span>
+    <span class="pill">bd. Ștefan cel Mare 1</span>
+    <span class="pill">⭐ 4.9 (1200)</span>
+  </div>
+  <div class="hero-wrap">
+    <span class="badge">NEW</span>
+    <div class="hero-card">
+      <img src="https://images.unsplash.com/photo-1606811841689-23dfddce3e95?w=400&q=60" alt="" />
+      <div>
+        <p style="margin:0;color:#888;font-size:12px;">Dental Clinic MD</p>
+        <h1>Transform Your Smile Today With Our Amazing Team!!!</h1>
+        <p>We use AI and lasers. Book now. Also parking. Also Wi‑Fi.</p>
+        <div class="stats">
+          <div><b>15+</b><br/>years</div>
+          <div><b>10k</b><br/>patients</div>
+          <div><b>50+</b><br/>awards</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="grid">
+    <div class="card">Service 1</div>
+    <div class="card">Service 2</div>
+    <div class="card">Service 3</div>
+    <div class="card">Service 4</div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OG Frontend — лендинги Vue · React · HTML</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=DM+Sans:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-header__brand" href="#top">OG Frontend</a>
+    <nav>
+      <a href="#demos">Демо</a>
+      <a href="#prices">Цены</a>
+      <a href="#contact">Связь</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="hero__media" role="img" aria-label="Рабочий стол с кодом"></div>
+      <div class="hero__content">
+        <p class="hero__brand">OG Frontend</p>
+        <h1 class="hero__title">Лендинги и UI вечерами — HTML, Vue, React</h1>
+        <p class="hero__lead">
+          Кишинёв / удалёнка. Чистая вёрстка, Vue и React, починка AI-сгенерированных сайтов. 2–3 часа в день — с дедлайном.
+        </p>
+        <div class="hero__cta">
+          <a class="btn btn--primary" href="#contact">Написать в Telegram</a>
+          <a class="btn btn--ghost" href="#demos">Смотреть демо</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="demos" class="section reveal">
+      <div class="section__inner">
+        <h2 class="section__title">Демо</h2>
+        <p class="section__lead">Три ниши + AI rescue. Вымышленные бренды Chișinău.</p>
+        <ul class="demo-list">
+          <li>
+            <a href="/dental/">
+              <strong>DentaLux</strong>
+              <span>HTML · стоматология</span>
+            </a>
+          </li>
+          <li>
+            <a href="/salon/">
+              <strong>Lumina Atelier</strong>
+              <span>Vue 3 · салон · RO/RU</span>
+            </a>
+          </li>
+          <li>
+            <a href="/cafe/">
+              <strong>Grain &amp; Steam</strong>
+              <span>React · кафе · меню</span>
+            </a>
+          </li>
+          <li>
+            <a href="/ai-rescue/">
+              <strong>AI Rescue</strong>
+              <span>До / после починки</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="prices" class="section section--alt reveal">
+      <div class="section__inner">
+        <h2 class="section__title">Стартовые цены</h2>
+        <p class="section__lead">Предоплата 50%. Два раунда правок, дальше — почасовка.</p>
+        <dl class="price-list">
+          <div><dt>Вёрстка лендинга</dt><dd>€200–250</dd></div>
+          <div><dt>Vue-лендинг</dt><dd>€280–350</dd></div>
+          <div><dt>React-лендинг / UI</dt><dd>€300–380</dd></div>
+          <div><dt>AI rescue</dt><dd>€180–300</dd></div>
+          <div><dt>Правки</dt><dd>€25–30/ч</dd></div>
+          <div><dt>Retainer 8–10 ч/мес</dt><dd>€200–250</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section id="contact" class="section reveal">
+      <div class="section__inner">
+        <h2 class="section__title">Связь</h2>
+        <p class="section__lead">Замени ссылку Telegram на свою в этом файле перед рассылкой.</p>
+        <a class="btn btn--primary" href="https://t.me/username" rel="noopener">Telegram</a>
+        <p class="hint">Стек: HTML/CSS · Vue 3 · React · вечерний график · Chișinău</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>OG Frontend · портфолио подработки · см. docs/PLAYBOOK.md</p>
+  </footer>
+  <script src="js/main.js"></script>
+</body>
+</html>

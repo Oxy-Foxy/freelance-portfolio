@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AI Rescue — Before / After</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --ink: #14221f;
+      --muted: #4a5c57;
+      --accent: #0d6e6e;
+      --bg: #eef4f2;
+    }
+    body {
+      margin: 0;
+      min-height: 100svh;
+      font-family: "Source Sans 3", sans-serif;
+      color: var(--ink);
+      background:
+        radial-gradient(ellipse at 80% 0%, #c8ddd6 0%, transparent 50%),
+        var(--bg);
+      display: grid;
+      place-items: center;
+      padding: 2rem 1.25rem;
+    }
+    .panel {
+      max-width: 32rem;
+      animation: up 0.6s ease both;
+    }
+    h1 {
+      font-family: "Fraunces", Georgia, serif;
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      margin: 0 0 0.75rem;
+      line-height: 1.1;
+    }
+    p { color: var(--muted); margin: 0 0 1.5rem; line-height: 1.5; }
+    .actions { display: flex; flex-wrap: wrap; gap: 0.75rem; }
+    a {
+      display: inline-flex;
+      padding: 0.7rem 1.15rem;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 0.35rem;
+      transition: transform 0.2s ease;
+    }
+    a:hover { transform: translateY(-1px); }
+    .before { background: #3d2a2a; color: #fff; }
+    .after { background: var(--accent); color: #fff; }
+    @keyframes up {
+      from { opacity: 0; transform: translateY(12px); }
+      to { opacity: 1; transform: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="panel">
+    <h1>AI Rescue</h1>
+    <p>Same fictional clinic brief — broken AI draft vs cleaned production landing that follows the portfolio design rules.</p>
+    <div class="actions">
+      <a class="before" href="before.html">View BEFORE</a>
+      <a class="after" href="after.html">View AFTER</a>
+    </div>
+  </div>
+</body>
+</html>

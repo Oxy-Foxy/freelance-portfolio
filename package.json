@@ -1,0 +1,14 @@
+{
+  "name": "freelance-portfolio",
+  "private": true,
+  "scripts": {
+    "build:salon": "npm run build --prefix salon-vue",
+    "build:cafe": "npm run build --prefix cafe-react",
+    "build": "npm run build:salon && npm run build:cafe && node scripts/assemble-dist.mjs",
+    "preview": "npx --yes serve dist -p 4173",
+    "dev:dental": "npx --yes serve dental-html -p 5174",
+    "dev:salon": "npm run dev --prefix salon-vue",
+    "dev:cafe": "npm run dev --prefix cafe-react",
+    "dev:hub": "npx --yes serve hub -p 5173"
+  }
+}
