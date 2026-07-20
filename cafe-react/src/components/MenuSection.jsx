@@ -31,11 +31,17 @@ export function MenuSection() {
             </button>
           ))}
         </div>
-        <ul className="menu-grid">
-          {items.map((item) => (
-            <li key={item.id}>
+        <ul className="menu-grid" key={category}>
+          {items.map((item, index) => (
+            <li
+              key={item.id}
+              className="menu-grid__item"
+              style={{ '--i': index }}
+            >
               <button type="button" className="menu-card" onClick={() => setSelected(item)}>
-                <img src={item.image} alt={item.alt} width="400" height="280" loading="lazy" />
+                <span className="menu-card__media">
+                  <img src={item.image} alt={item.alt} width="400" height="280" loading="lazy" />
+                </span>
                 <span className="menu-card__body">
                   <span className="menu-card__name">{item.name}</span>
                   <span className="menu-card__price">{item.price}</span>

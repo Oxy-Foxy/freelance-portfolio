@@ -54,3 +54,19 @@ const observer = new IntersectionObserver(
 );
 
 reveals.forEach((el) => observer.observe(el));
+
+document.querySelectorAll(".faq__q").forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const item = btn.closest(".faq__item");
+    if (!item) return;
+    const wasOpen = item.classList.contains("is-open");
+    document.querySelectorAll(".faq__item").forEach((el) => {
+      el.classList.remove("is-open");
+      el.querySelector(".faq__q")?.setAttribute("aria-expanded", "false");
+    });
+    if (!wasOpen) {
+      item.classList.add("is-open");
+      btn.setAttribute("aria-expanded", "true");
+    }
+  });
+});

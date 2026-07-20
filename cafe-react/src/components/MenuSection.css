@@ -15,13 +15,24 @@
   color: var(--color-muted);
   cursor: pointer;
   border-radius: var(--radius);
-  transition: border-color var(--transition), color var(--transition);
+  transition:
+    border-color var(--transition),
+    color var(--transition),
+    background var(--transition),
+    transform var(--transition);
 }
 
-.filters button.is-active,
 .filters button:hover {
   color: var(--color-ink);
   border-color: var(--color-accent);
+  transform: translateY(-1px);
+}
+
+.filters button.is-active {
+  color: #fff;
+  background: var(--color-accent);
+  border-color: var(--color-accent);
+  transform: none;
 }
 
 .menu-grid {
@@ -45,6 +56,11 @@
   }
 }
 
+.menu-grid__item {
+  animation: menu-in 0.45s ease both;
+  animation-delay: calc(var(--i, 0) * 55ms);
+}
+
 .menu-card {
   width: 100%;
   display: grid;
@@ -58,18 +74,31 @@
   cursor: pointer;
   overflow: hidden;
   font: inherit;
-  transition: border-color var(--transition), transform var(--transition);
+  transition: border-color var(--transition), transform var(--transition), box-shadow var(--transition);
 }
 
 .menu-card:hover {
   border-color: var(--color-accent);
-  transform: translateY(-2px);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 24px rgba(22, 17, 13, 0.08);
+}
+
+.menu-card__media {
+  display: block;
+  overflow: hidden;
+  aspect-ratio: 4 / 3;
 }
 
 .menu-card img {
   width: 100%;
-  aspect-ratio: 4 / 3;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  transition: transform 0.45s ease;
+}
+
+.menu-card:hover img {
+  transform: scale(1.06);
 }
 
 .menu-card__body {
@@ -86,4 +115,27 @@
 .menu-card__price {
   color: var(--color-muted);
   white-space: nowrap;
+}
+
+@keyframes menu-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .menu-grid__item {
+    animation: none;
+  }
+
+  .menu-card img,
+  .filters button,
+  .menu-card {
+    transition: none;
+  }
 }

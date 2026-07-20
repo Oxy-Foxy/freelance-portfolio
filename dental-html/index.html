@@ -105,18 +105,33 @@
         <h2 class="section__title">Întrebări frecvente</h2>
         <p class="section__lead">Răspunsuri scurte înainte de prima vizită.</p>
         <div class="faq">
-          <details>
-            <summary>Acceptați asigurări?</summary>
-            <p>Lucrăm cu plată directă; oferim factură pentru decontare unde e posibil.</p>
-          </details>
-          <details>
-            <summary>Cât durează o consultație?</summary>
-            <p>De obicei 30–45 minute, inclusiv planul de tratament.</p>
-          </details>
-          <details>
-            <summary>Aveți sedare / anestezie blândă?</summary>
-            <p>Da — discutăm opțiunile înainte de orice procedură.</p>
-          </details>
+          <div class="faq__item is-open">
+            <button type="button" class="faq__q" aria-expanded="true" aria-controls="faq-a-0">
+              <span>Acceptați asigurări?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-a-0" class="faq__panel" role="region">
+              <p class="faq__a">Lucrăm cu plată directă; oferim factură pentru decontare unde e posibil.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-1">
+              <span>Cât durează o consultație?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-a-1" class="faq__panel" role="region">
+              <p class="faq__a">De obicei 30–45 minute, inclusiv planul de tratament.</p>
+            </div>
+          </div>
+          <div class="faq__item">
+            <button type="button" class="faq__q" aria-expanded="false" aria-controls="faq-a-2">
+              <span>Aveți sedare / anestezie blândă?</span>
+              <span class="faq__icon" aria-hidden="true"></span>
+            </button>
+            <div id="faq-a-2" class="faq__panel" role="region">
+              <p class="faq__a">Da — discutăm opțiunile înainte de orice procedură.</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
