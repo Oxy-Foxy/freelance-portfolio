@@ -448,10 +448,6 @@ body.nav-open {
   line-height: 1.4;
 }
 
-.about {
-  max-width: 40rem;
-}
-
 .about__name {
   margin: 0 0 0.25rem;
   font-size: 1.35rem;
