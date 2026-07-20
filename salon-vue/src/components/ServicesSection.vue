@@ -46,8 +46,9 @@ const t = inject('t')
 h3 {
   margin: 0 0 0.35rem;
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-style: italic;
 }
 
 p {

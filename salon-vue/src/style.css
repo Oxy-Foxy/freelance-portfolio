@@ -1,19 +1,19 @@
 :root {
-  --color-bg: #1a1214;
-  --color-bg-soft: #24191c;
-  --color-ink: #f4ebe6;
-  --color-muted: #c4b0a8;
-  --color-accent: #c4785a;
-  --color-accent-hover: #d48a6c;
-  --color-line: rgba(244, 235, 230, 0.14);
-  --font-display: "Montserrat", system-ui, sans-serif;
+  --color-bg: #140f14;
+  --color-bg-soft: #1e151c;
+  --color-ink: #f6efe8;
+  --color-muted: #c9b5bc;
+  --color-accent: #c9a66b;
+  --color-accent-hover: #d9b87e;
+  --color-line: rgba(246, 239, 232, 0.14);
+  --font-display: "Cormorant Garamond", Georgia, serif;
   --font-body: "Montserrat", system-ui, sans-serif;
   --space-sm: 1rem;
   --space-md: 1.5rem;
   --space-lg: 3rem;
-  --space-xl: 5rem;
+  --space-xl: 5.25rem;
   --max: 68rem;
-  --radius: 0.25rem;
+  --radius: 0.1rem;
   --transition: 0.25s ease;
 }
 
@@ -34,8 +34,8 @@ body {
   font-family: var(--font-body);
   color: var(--color-ink);
   background:
-    radial-gradient(ellipse 70% 45% at 90% 10%, #3a2428 0%, transparent 55%),
-    linear-gradient(180deg, var(--color-bg) 0%, #120d0f 100%);
+    radial-gradient(ellipse 65% 40% at 85% 0%, #3a2233 0%, transparent 55%),
+    linear-gradient(180deg, var(--color-bg) 0%, #0e0a0e 100%);
   line-height: 1.55;
   min-height: 100svh;
   overflow-x: clip;
@@ -59,15 +59,16 @@ img {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0.75rem 1.25rem;
+  padding: 0.75rem 1.35rem;
   border-radius: var(--radius);
   font-weight: 600;
   text-decoration: none;
   border: 1px solid transparent;
   cursor: pointer;
   font-family: inherit;
-  font-size: 1rem;
-  transition: background var(--transition), transform var(--transition), border-color var(--transition);
+  font-size: 0.95rem;
+  letter-spacing: 0.02em;
+  transition: background var(--transition), transform var(--transition), border-color var(--transition), color var(--transition);
 }
 
 .btn:hover {
@@ -76,7 +77,7 @@ img {
 
 .btn--primary {
   background: var(--color-accent);
-  color: #1a1214;
+  color: #140f14;
 }
 
 .btn--primary:hover {
@@ -84,13 +85,14 @@ img {
 }
 
 .btn--ghost {
-  border-color: rgba(244, 235, 230, 0.45);
+  border-color: rgba(201, 166, 107, 0.55);
   background: transparent;
   color: var(--color-ink);
 }
 
 .btn--ghost:hover {
-  border-color: var(--color-ink);
+  border-color: var(--color-accent);
+  color: var(--color-accent);
 }
 
 .section {
@@ -105,8 +107,9 @@ img {
 .section__title {
   margin: 0 0 0.5rem;
   font-family: var(--font-display);
-  font-size: clamp(1.85rem, 3.5vw, 2.5rem);
-  font-weight: 600;
+  font-size: clamp(2.15rem, 4vw, 3rem);
+  font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .section__lead {

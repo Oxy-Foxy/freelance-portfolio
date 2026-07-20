@@ -36,7 +36,7 @@ const t = inject('t')
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(to top, rgba(18, 13, 15, 0.82), rgba(18, 13, 15, 0.35)),
+    linear-gradient(to top, rgba(20, 12, 18, 0.88), rgba(30, 16, 28, 0.4)),
     url('https://images.unsplash.com/photo-1560066984-138dadb4c035?w=1600&q=80')
       center / cover no-repeat;
 }
@@ -44,7 +44,7 @@ const t = inject('t')
 .hero__content {
   position: relative;
   z-index: 1;
-  max-width: 36rem;
+  max-width: 38rem;
   padding: var(--space-lg) clamp(1rem, 4vw, 2.5rem) var(--space-md);
   animation: fade-up 0.8s ease both;
 }
@@ -52,22 +52,25 @@ const t = inject('t')
 .hero__brand {
   margin: 0 0 var(--space-sm);
   font-family: var(--font-display);
-  font-size: clamp(2.5rem, 8vw, 4rem);
-  font-weight: 700;
-  line-height: 1;
-  letter-spacing: -0.02em;
+  font-size: clamp(3rem, 9vw, 4.75rem);
+  font-weight: 500;
+  font-style: italic;
+  line-height: 0.95;
+  letter-spacing: 0.01em;
 }
 
 .hero__title {
   margin: 0 0 var(--space-sm);
   font-family: var(--font-display);
-  font-size: clamp(1.35rem, 3vw, 1.85rem);
+  font-size: clamp(1.5rem, 3.2vw, 2rem);
   font-weight: 500;
+  letter-spacing: 0.01em;
 }
 
 .hero__lead {
   margin: 0 0 var(--space-md);
-  color: rgba(244, 235, 230, 0.88);
+  color: rgba(246, 239, 232, 0.88);
+  max-width: 28rem;
 }
 
 .hero__cta {

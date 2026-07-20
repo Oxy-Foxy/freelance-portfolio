@@ -115,15 +115,16 @@ function setDrawer(next) {
   justify-content: space-between;
   gap: 0.75rem 1rem;
   padding: 0.85rem clamp(1rem, 4vw, 2rem);
-  background: rgba(26, 18, 20, 0.9);
+  background: rgba(20, 15, 20, 0.92);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--color-line);
 }
 
 .site-header__brand {
   font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 600;
+  font-size: 1.55rem;
+  font-weight: 500;
+  font-style: italic;
   letter-spacing: 0.02em;
   border: 0;
   background: none;
@@ -270,7 +271,7 @@ function setDrawer(next) {
 .lang__menu button:hover,
 .lang__menu button.active {
   color: var(--color-ink);
-  background: rgba(196, 120, 90, 0.15);
+  background: rgba(201, 166, 107, 0.18);
 }
 
 @media (max-width: 768px) {
