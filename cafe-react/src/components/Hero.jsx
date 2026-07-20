@@ -1,3 +1,4 @@
+import { scrollToId } from '../utils/scrollToId'
 import './Hero.css'
 
 export function Hero() {
@@ -11,12 +12,12 @@ export function Hero() {
           Espresso, filter și dulciuri de casă în Chișinău — boabe prăjite local, masă liniștită.
         </p>
         <div className="hero__cta">
-          <a className="btn btn--primary" href="#menu">
+          <button type="button" className="btn btn--primary" onClick={() => scrollToId('menu')}>
             Vezi meniul
-          </a>
-          <a className="btn btn--ghost" href="#contact">
+          </button>
+          <button type="button" className="btn btn--ghost" onClick={() => scrollToId('contact')}>
             Scrie-ne
-          </a>
+          </button>
         </div>
       </div>
     </section>

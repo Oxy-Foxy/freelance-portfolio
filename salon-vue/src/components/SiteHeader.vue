@@ -1,5 +1,6 @@
 <script setup>
 import { inject } from 'vue'
+import { scrollToId } from '../composables/scrollToId'
 
 const t = inject('t')
 const locale = inject('locale')
@@ -8,12 +9,14 @@ const setLocale = inject('setLocale')
 
 <template>
   <header class="site-header">
-    <a class="site-header__brand" href="#top">{{ t.brand }}</a>
+    <button type="button" class="site-header__brand" @click="scrollToId('top')">
+      {{ t.brand }}
+    </button>
     <nav class="site-header__nav" aria-label="Main">
-      <a href="#servicii">{{ t.navServices }}</a>
-      <a href="#atmosfera">{{ t.navAtmosphere }}</a>
-      <a href="#preturi">{{ t.navPrices }}</a>
-      <a href="#contact">{{ t.navContact }}</a>
+      <button type="button" @click="scrollToId('servicii')">{{ t.navServices }}</button>
+      <button type="button" @click="scrollToId('atmosfera')">{{ t.navAtmosphere }}</button>
+      <button type="button" @click="scrollToId('preturi')">{{ t.navPrices }}</button>
+      <button type="button" @click="scrollToId('contact')">{{ t.navContact }}</button>
     </nav>
     <div class="lang" role="group" aria-label="Language">
       <button type="button" :class="{ active: locale === 'ro' }" @click="setLocale('ro')">RO</button>
@@ -42,8 +45,12 @@ const setLocale = inject('setLocale')
   font-family: var(--font-display);
   font-size: 1.35rem;
   font-weight: 600;
-  text-decoration: none;
   letter-spacing: 0.02em;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
 }
 
 .site-header__nav {
@@ -53,12 +60,16 @@ const setLocale = inject('setLocale')
   font-size: 0.92rem;
 }
 
-.site-header__nav a {
-  text-decoration: none;
+.site-header__nav button {
+  border: 0;
+  background: none;
   color: var(--color-muted);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
 }
 
-.site-header__nav a:hover {
+.site-header__nav button:hover {
   color: var(--color-ink);
 }
 

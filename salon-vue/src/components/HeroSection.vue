@@ -1,5 +1,6 @@
 <script setup>
 import { inject } from 'vue'
+import { scrollToId } from '../composables/scrollToId'
 
 const t = inject('t')
 </script>
@@ -12,8 +13,12 @@ const t = inject('t')
       <h1 class="hero__title">{{ t.heroTitle }}</h1>
       <p class="hero__lead">{{ t.heroLead }}</p>
       <div class="hero__cta">
-        <a class="btn btn--primary" href="#contact">{{ t.ctaBook }}</a>
-        <a class="btn btn--ghost" href="#servicii">{{ t.ctaServices }}</a>
+        <button type="button" class="btn btn--primary" @click="scrollToId('contact')">
+          {{ t.ctaBook }}
+        </button>
+        <button type="button" class="btn btn--ghost" @click="scrollToId('servicii')">
+          {{ t.ctaServices }}
+        </button>
       </div>
     </div>
   </section>

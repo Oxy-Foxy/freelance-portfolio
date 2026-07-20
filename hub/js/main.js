@@ -1,11 +1,24 @@
+function scrollToId(id) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.scrollIntoView({ behavior: "smooth", block: "start" });
+}
+
+document.querySelectorAll("[data-scroll]").forEach((el) => {
+  el.addEventListener("click", (e) => {
+    e.preventDefault();
+    scrollToId(el.getAttribute("data-scroll"));
+  });
+});
+
 document.querySelectorAll(".reveal").forEach((el) => {
   const observer = new IntersectionObserver(
     ([entry]) => {
-      if (!entry.isIntersecting) return
-      entry.target.classList.add("is-visible")
-      observer.unobserve(entry.target)
+      if (!entry.isIntersecting) return;
+      entry.target.classList.add("is-visible");
+      observer.unobserve(entry.target);
     },
     { threshold: 0.15 }
-  )
-  observer.observe(el)
-})
+  );
+  observer.observe(el);
+});

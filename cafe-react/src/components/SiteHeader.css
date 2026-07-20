@@ -16,7 +16,11 @@
   font-family: var(--font-display);
   font-size: 1.15rem;
   font-weight: 700;
-  text-decoration: none;
+  border: 0;
+  background: none;
+  color: inherit;
+  cursor: pointer;
+  padding: 0;
 }
 
 .site-header__nav {
@@ -26,11 +30,15 @@
   font-size: 0.95rem;
 }
 
-.site-header__nav a {
-  text-decoration: none;
+.site-header__nav button {
+  border: 0;
+  background: none;
   color: var(--color-muted);
+  cursor: pointer;
+  font: inherit;
+  padding: 0;
 }
 
-.site-header__nav a:hover {
+.site-header__nav button:hover {
   color: var(--color-ink);
 }

@@ -1,5 +1,6 @@
 <script setup>
 import { inject } from 'vue'
+import { scrollToId } from '../composables/scrollToId'
 
 const t = inject('t')
 </script>
@@ -23,7 +24,9 @@ const t = inject('t')
           <dd>{{ t.priceCareVal }}</dd>
         </div>
       </dl>
-      <a class="btn btn--primary" href="#contact">{{ t.ctaBook }}</a>
+      <button type="button" class="btn btn--primary" @click="scrollToId('contact')">
+        {{ t.ctaBook }}
+      </button>
     </div>
   </section>
 </template>

@@ -1,15 +1,22 @@
+import { scrollToId } from '../utils/scrollToId'
 import './SiteHeader.css'
 
 export function SiteHeader() {
   return (
     <header className="site-header">
-      <a className="site-header__brand" href="#top">
+      <button type="button" className="site-header__brand" onClick={() => scrollToId('top')}>
         Grain &amp; Steam
-      </a>
+      </button>
       <nav className="site-header__nav" aria-label="Principal">
-        <a href="#menu">Meniu</a>
-        <a href="#atmosfera">Atmosferă</a>
-        <a href="#contact">Contact</a>
+        <button type="button" onClick={() => scrollToId('menu')}>
+          Meniu
+        </button>
+        <button type="button" onClick={() => scrollToId('atmosfera')}>
+          Atmosferă
+        </button>
+        <button type="button" onClick={() => scrollToId('contact')}>
+          Contact
+        </button>
       </nav>
     </header>
   )
