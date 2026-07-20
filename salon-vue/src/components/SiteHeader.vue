@@ -312,11 +312,15 @@ function setDrawer(next) {
     gap: 1.5rem;
     background: var(--color-bg);
     transform: translateX(100%);
-    transition: transform 0.28s ease;
+    transition: transform 0.28s ease, visibility 0.28s ease;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .site-header__panel.is-open {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .site-header__nav {

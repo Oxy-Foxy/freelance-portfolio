@@ -25,6 +25,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
@@ -36,6 +38,8 @@ body {
     linear-gradient(180deg, var(--color-bg) 0%, #120d0f 100%);
   line-height: 1.55;
   min-height: 100svh;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 a {

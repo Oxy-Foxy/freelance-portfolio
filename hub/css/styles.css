@@ -23,6 +23,8 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 body {
@@ -33,6 +35,8 @@ body {
     radial-gradient(ellipse 70% 45% at 100% 0%, #c5d6cb 0%, transparent 50%),
     linear-gradient(180deg, #eef4f0 0%, var(--color-bg) 50%, #d9e4dc 100%);
   line-height: 1.55;
+  overflow-x: clip;
+  max-width: 100%;
 }
 
 a {
@@ -173,11 +177,15 @@ body.nav-open {
     background: #f4f8f5;
     border-left: 1px solid rgba(20, 32, 26, 0.08);
     transform: translateX(100%);
-    transition: transform 0.28s ease;
+    transition: transform 0.28s ease, visibility 0.28s ease;
+    visibility: hidden;
+    pointer-events: none;
   }
 
   .site-header__panel.is-open {
     transform: translateX(0);
+    visibility: visible;
+    pointer-events: auto;
   }
 
   .site-header nav {
