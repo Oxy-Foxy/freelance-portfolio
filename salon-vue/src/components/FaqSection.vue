@@ -51,6 +51,10 @@ function toggle(id) {
   border-bottom: 1px solid var(--color-line);
 }
 
+.faq__item:last-child {
+  border-bottom: none;
+}
+
 .faq__q {
   width: 100%;
   display: flex;

@@ -45,6 +45,10 @@ const t = inject('t')
   border-bottom: 1px solid var(--color-line);
 }
 
+.prices > div:last-child {
+  border-bottom: none;
+}
+
 dt {
   font-weight: 600;
 }

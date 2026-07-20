@@ -518,6 +518,10 @@ body.nav-open {
   border-bottom: 1px solid rgba(20, 32, 26, 0.12);
 }
 
+.price-list > div:last-child {
+  border-bottom: none;
+}
+
 .price-list dd {
   margin: 0;
   color: var(--color-muted);

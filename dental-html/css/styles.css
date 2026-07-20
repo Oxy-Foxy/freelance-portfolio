@@ -394,6 +394,10 @@ body.nav-open {
   border-bottom: 1px solid rgba(15, 42, 50, 0.12);
 }
 
+.price-list > div:last-child {
+  border-bottom: none;
+}
+
 .price-list dt {
   font-weight: 600;
 }
@@ -405,6 +409,10 @@ body.nav-open {
 
 .faq__item {
   border-bottom: 1px solid rgba(15, 42, 50, 0.12);
+}
+
+.faq__item:last-child {
+  border-bottom: none;
 }
 
 .faq__q {
