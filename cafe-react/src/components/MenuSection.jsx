@@ -35,7 +35,7 @@ export function MenuSection() {
           {items.map((item) => (
             <li key={item.id}>
               <button type="button" className="menu-card" onClick={() => setSelected(item)}>
-                <img src={item.image} alt="" width="400" height="280" loading="lazy" />
+                <img src={item.image} alt={item.alt} width="400" height="280" loading="lazy" />
                 <span className="menu-card__body">
                   <span className="menu-card__name">{item.name}</span>
                   <span className="menu-card__price">{item.price}</span>

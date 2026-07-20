@@ -14,7 +14,7 @@ const t = inject('t')
       <figure>
         <img
           src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=900&q=80"
-          alt=""
+          alt="Salon de frumusețe, scaun și oglindă"
           width="900"
           height="600"
           loading="lazy"

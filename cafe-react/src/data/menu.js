@@ -5,7 +5,8 @@ export const MENU = [
     name: 'Espresso',
     price: '35 MDL',
     desc: 'Shot scurt, cremă densă.',
-    image: 'https://images.unsplash.com/photo-1510590332719-81932b4993f5?w=600&q=80',
+    alt: 'Ceașcă de espresso cu cremă densă',
+    image: 'https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=600&q=80',
   },
   {
     id: 'flat-white',
@@ -13,6 +14,7 @@ export const MENU = [
     name: 'Flat white',
     price: '55 MDL',
     desc: 'Lapte catifelat, espresso dublu.',
+    alt: 'Flat white cu latte art pe masă de lemn',
     image: 'https://images.unsplash.com/photo-1577968897966-3d4325b36b61?w=600&q=80',
   },
   {
@@ -21,6 +23,7 @@ export const MENU = [
     name: 'Filter V60',
     price: '50 MDL',
     desc: 'Note fructate, preparare la vedere.',
+    alt: 'Căni cu cafea filter văzute de sus',
     image: 'https://images.unsplash.com/photo-1498804103079-a6351b050096?w=600&q=80',
   },
   {
@@ -29,6 +32,7 @@ export const MENU = [
     name: 'Croissant unt',
     price: '40 MDL',
     desc: 'Copt dimineața, foietaj crocant.',
+    alt: 'Croissant proaspăt cu zahăr pudră',
     image: 'https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=600&q=80',
   },
   {
@@ -37,6 +41,7 @@ export const MENU = [
     name: 'Brownie cacao',
     price: '45 MDL',
     desc: 'Dens, cu sare de mare.',
+    alt: 'Bucăți de brownie de cacao',
     image: 'https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=600&q=80',
   },
   {
@@ -45,7 +50,8 @@ export const MENU = [
     name: 'Limonadă casă',
     price: '40 MDL',
     desc: 'Lămâie, mentă, puțin zahăr.',
-    image: 'https://images.unsplash.com/photo-1523677011785-c18990e25a76?w=600&q=80',
+    alt: 'Pahar cu limonadă pe masă',
+    image: 'https://images.unsplash.com/photo-1621263764928-df1444c5e859?w=600&q=80',
   },
 ]
 

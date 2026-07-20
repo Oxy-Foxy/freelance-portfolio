@@ -18,7 +18,7 @@ export function MenuModal({ item, onClose }) {
     <div className="modal" role="dialog" aria-modal="true" aria-labelledby="menu-modal-title">
       <button type="button" className="modal__backdrop" aria-label="Închide" onClick={onClose} />
       <div className="modal__panel">
-        <img src={item.image} alt="" width="600" height="400" />
+        <img src={item.image} alt={item.alt} width="600" height="400" />
         <div className="modal__body">
           <h3 id="menu-modal-title">{item.name}</h3>
           <p className="modal__price">{item.price}</p>

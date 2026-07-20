@@ -13,7 +13,7 @@ export function Atmosphere() {
         <figure>
           <img
             src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=900&q=80"
-            alt="Interior cafenea"
+            alt="Interior cafenea cu mese și lumină caldă"
             width="900"
             height="600"
             loading="lazy"
