@@ -9,7 +9,7 @@ export function Hero() {
         <p className="hero__brand">Grain &amp; Steam</p>
         <h1 className="hero__title">Cafea de specialitate, ritm de cartier</h1>
         <p className="hero__lead">
-          Espresso, filter și dulciuri de casă în Chișinău — boabe prăjite local, masă liniștită.
+          Espresso, filter și dulciuri de casă în Bălți — boabe prăjite local, masă liniștită.
         </p>
         <div className="hero__cta">
           <button type="button" className="btn btn--primary" onClick={() => scrollToId('menu')}>

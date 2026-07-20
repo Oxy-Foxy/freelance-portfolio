@@ -1,13 +1,13 @@
-# Freelance portfolio (MD side hustle demos)
+# Freelance portfolio (MD)
 
 **Live:** https://freelance-portfolio-ten-psi.vercel.app
 
-Демо-лендинги + хаб + playbook для подработки (HTML / Vue / React).  
+Демо-лендинги + хаб + playbook (HTML / Vue / React).  
 Figma MCP не используется — референсы Community в [`docs/MOCKUPS.md`](docs/MOCKUPS.md).  
 Правила дизайна: [`docs/DESIGN_RULES.md`](docs/DESIGN_RULES.md).  
 План выхода на деньги: [`docs/PLAYBOOK.md`](docs/PLAYBOOK.md).
 
-## Brands (fictional Chișinău)
+## Brands (fictional Bălți)
 
 | Path | Stack | Brand |
 |------|-------|-------|

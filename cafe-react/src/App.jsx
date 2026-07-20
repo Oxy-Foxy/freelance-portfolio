@@ -11,7 +11,7 @@ export default function App() {
   useReveal()
 
   useEffect(() => {
-    document.title = 'Grain & Steam — Cafea Chișinău'
+    document.title = 'Grain & Steam — Cafea Bălți'
   }, [])
 
   return (

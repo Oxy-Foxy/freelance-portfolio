@@ -1,6 +1,6 @@
 # Design mockup references
 
-Inspired by free Figma Community files. **Fictional Chișinău brands.** Community layout = mood/structure only — project design rules win.
+Inspired by free Figma Community files. **Fictional Bălți brands.** Community layout = mood/structure only — project design rules win.
 
 ## Chosen references
 

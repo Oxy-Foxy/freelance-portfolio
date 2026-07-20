@@ -8,7 +8,7 @@ export function SiteFooter() {
         fontSize: '0.9rem',
       }}
     >
-      <p style={{ margin: 0 }}>Grain &amp; Steam · Chișinău · Demo portofoliu</p>
+      <p style={{ margin: 0 }}>Grain &amp; Steam · Bălți · Demo portofoliu</p>
     </footer>
   )
 }

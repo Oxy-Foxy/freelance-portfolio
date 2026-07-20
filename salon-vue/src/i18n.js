@@ -7,7 +7,7 @@ export const messages = {
     brand: 'Lumina Atelier',
     heroTitle: 'Frumusețe calmă, detalii precise',
     heroLead:
-      'Salon de păr și îngrijire în Chișinău — ritm liniștit, stil modern, programări care respectă timpul tău.',
+      'Salon de păr și îngrijire în Bălți — ritm liniștit, stil modern, programări care respectă timpul tău.',
     ctaBook: 'Rezervă o oră',
     ctaServices: 'Servicii',
     servicesTitle: 'Servicii',
@@ -42,7 +42,7 @@ export const messages = {
     phone: 'Telefon',
     message: 'Mesaj',
     send: 'Trimite',
-    footer: 'Lumina Atelier · Chișinău · Demo portofoliu',
+    footer: 'Lumina Atelier · Bălți · Demo portofoliu',
   },
   ru: {
     navServices: 'Услуги',
@@ -52,7 +52,7 @@ export const messages = {
     brand: 'Lumina Atelier',
     heroTitle: 'Спокойная красота, точные детали',
     heroLead:
-      'Салон волос и ухода в Кишинёве — спокойный ритм, современный стиль, записи без ожидания.',
+      'Салон волос и ухода в Бельцах — спокойный ритм, современный стиль, записи без ожидания.',
     ctaBook: 'Записаться',
     ctaServices: 'Услуги',
     servicesTitle: 'Услуги',
@@ -87,6 +87,6 @@ export const messages = {
     phone: 'Телефон',
     message: 'Сообщение',
     send: 'Отправить',
-    footer: 'Lumina Atelier · Кишинёв · Демо портфолио',
+    footer: 'Lumina Atelier · Бельцы · Демо портфолио',
   },
 }
