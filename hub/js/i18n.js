@@ -4,6 +4,8 @@ window.HUB_I18N = {
     navDemos: "Демо",
     navPrices: "Цены",
     navContact: "Связь",
+    menuAria: "Открыть меню",
+    closeAria: "Закрыть меню",
     heroMediaAria: "Рабочий стол разработчика с кодом",
     heroTitle: "Лендинги и UI под ключ — с понятным сроком",
     heroLead:
@@ -42,6 +44,8 @@ window.HUB_I18N = {
     navDemos: "Demo",
     navPrices: "Prețuri",
     navContact: "Contact",
+    menuAria: "Deschide meniul",
+    closeAria: "Închide meniul",
     heroMediaAria: "Birou de dezvoltator cu cod pe ecran",
     heroTitle: "Landing-uri și UI la cheie — cu termen clar",
     heroLead:
@@ -80,6 +84,8 @@ window.HUB_I18N = {
     navDemos: "Demos",
     navPrices: "Pricing",
     navContact: "Contact",
+    menuAria: "Open menu",
+    closeAria: "Close menu",
     heroMediaAria: "Developer desk with code on screen",
     heroTitle: "Landings & UI delivered on a clear deadline",
     heroLead:

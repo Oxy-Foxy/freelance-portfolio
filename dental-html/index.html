@@ -12,12 +12,26 @@
 <body>
   <header class="site-header">
     <a class="site-header__brand" href="#" data-scroll="top">DentaLux</a>
-    <nav class="site-header__nav" aria-label="Principal">
-      <a href="#" data-scroll="servicii">Servicii</a>
-      <a href="#" data-scroll="despre">Despre</a>
-      <a href="#" data-scroll="preturi">Prețuri</a>
-      <a href="#" data-scroll="contact">Contact</a>
-    </nav>
+    <button
+      type="button"
+      class="site-header__burger"
+      aria-label="Deschide meniul"
+      aria-expanded="false"
+      aria-controls="dental-nav-panel"
+      data-nav-open
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    <div id="dental-nav-panel" class="site-header__panel" data-nav-panel>
+      <button type="button" class="site-header__close" aria-label="Închide meniul" data-nav-close>×</button>
+      <nav class="site-header__nav" aria-label="Principal">
+        <a href="#" data-scroll="servicii">Servicii</a>
+        <a href="#" data-scroll="despre">Despre</a>
+        <a href="#" data-scroll="preturi">Prețuri</a>
+        <a href="#" data-scroll="contact">Contact</a>
+      </nav>
+    </div>
   </header>
 
   <main id="top">

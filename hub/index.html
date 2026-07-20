@@ -12,7 +12,21 @@
 <body>
   <header class="site-header">
     <a class="site-header__brand" href="#" data-scroll="top">OG Frontend</a>
-    <div class="site-header__right">
+    <button
+      type="button"
+      class="site-header__burger"
+      aria-expanded="false"
+      aria-controls="site-nav-panel"
+      data-nav-open
+      data-i18n-aria="menuAria"
+    >
+      <span></span><span></span><span></span>
+    </button>
+    <div class="nav-backdrop" data-nav-backdrop hidden></div>
+    <div id="site-nav-panel" class="site-header__panel" data-nav-panel>
+      <button type="button" class="site-header__close" data-nav-close data-i18n-aria="closeAria">
+        ×
+      </button>
       <nav aria-label="Main">
         <a href="#" data-scroll="demos" data-i18n="navDemos"></a>
         <a href="#" data-scroll="prices" data-i18n="navPrices"></a>

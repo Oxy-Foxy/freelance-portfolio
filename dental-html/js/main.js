@@ -7,11 +7,30 @@ function scrollToId(id) {
   el.scrollIntoView({ behavior: "smooth", block: "start" });
 }
 
+function setNavOpen(open) {
+  const panel = document.querySelector("[data-nav-panel]");
+  const backdrop = document.querySelector("[data-nav-backdrop]");
+  const burger = document.querySelector("[data-nav-open]");
+  if (!panel || !backdrop || !burger) return;
+  panel.classList.toggle("is-open", open);
+  backdrop.hidden = !open;
+  burger.setAttribute("aria-expanded", open ? "true" : "false");
+  document.body.classList.toggle("nav-open", open);
+}
+
 document.querySelectorAll("[data-scroll]").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
     scrollToId(el.getAttribute("data-scroll"));
+    setNavOpen(false);
   });
+});
+
+document.querySelector("[data-nav-open]")?.addEventListener("click", () => setNavOpen(true));
+document.querySelector("[data-nav-close]")?.addEventListener("click", () => setNavOpen(false));
+document.querySelector("[data-nav-backdrop]")?.addEventListener("click", () => setNavOpen(false));
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") setNavOpen(false);
 });
 
 window.addEventListener(

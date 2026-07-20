@@ -27,6 +27,18 @@ function setDropdownOpen(open) {
   root.classList.toggle("is-open", open);
 }
 
+function setNavOpen(open) {
+  const panel = document.querySelector("[data-nav-panel]");
+  const backdrop = document.querySelector("[data-nav-backdrop]");
+  const burger = document.querySelector("[data-nav-open]");
+  if (!panel || !backdrop || !burger) return;
+  panel.classList.toggle("is-open", open);
+  backdrop.hidden = !open;
+  burger.setAttribute("aria-expanded", open ? "true" : "false");
+  document.body.classList.toggle("nav-open", open);
+  if (!open) setDropdownOpen(false);
+}
+
 function applyI18n(lang) {
   const dict = window.HUB_I18N?.[lang] || window.HUB_I18N.ru;
   document.documentElement.lang = lang;
@@ -59,7 +71,20 @@ document.querySelectorAll("[data-scroll]").forEach((el) => {
   el.addEventListener("click", (e) => {
     e.preventDefault();
     scrollToId(el.getAttribute("data-scroll"));
+    setNavOpen(false);
   });
+});
+
+document.querySelector("[data-nav-open]")?.addEventListener("click", () => {
+  setNavOpen(true);
+});
+
+document.querySelector("[data-nav-close]")?.addEventListener("click", () => {
+  setNavOpen(false);
+});
+
+document.querySelector("[data-nav-backdrop]")?.addEventListener("click", () => {
+  setNavOpen(false);
 });
 
 const langToggle = document.querySelector("[data-lang-toggle]");
@@ -83,7 +108,10 @@ document.addEventListener("click", (e) => {
 });
 
 document.addEventListener("keydown", (e) => {
-  if (e.key === "Escape") setDropdownOpen(false);
+  if (e.key === "Escape") {
+    setDropdownOpen(false);
+    setNavOpen(false);
+  }
 });
 
 document.querySelectorAll(".reveal").forEach((el) => {
