@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>OG Frontend — лендинги Vue · React · HTML</title>
+  <title>OG Frontend</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
@@ -12,90 +12,108 @@
 <body>
   <header class="site-header">
     <a class="site-header__brand" href="#" data-scroll="top">OG Frontend</a>
-    <nav>
-      <a href="#" data-scroll="demos">Демо</a>
-      <a href="#" data-scroll="prices">Цены</a>
-      <a href="#" data-scroll="contact">Связь</a>
-    </nav>
+    <div class="site-header__right">
+      <nav aria-label="Main">
+        <a href="#" data-scroll="demos" data-i18n="navDemos"></a>
+        <a href="#" data-scroll="prices" data-i18n="navPrices"></a>
+        <a href="#" data-scroll="contact" data-i18n="navContact"></a>
+      </nav>
+      <div class="lang" role="group" aria-label="Language">
+        <button type="button" data-lang="ru">RU</button>
+        <button type="button" data-lang="ro">RO</button>
+        <button type="button" data-lang="en">EN</button>
+      </div>
+    </div>
   </header>
 
   <main id="top">
     <section class="hero">
-      <div class="hero__media" role="img" aria-label="Рабочий стол с кодом"></div>
+      <div class="hero__media" role="img" data-i18n-aria="heroMediaAria"></div>
       <div class="hero__content">
         <p class="hero__brand">OG Frontend</p>
-        <h1 class="hero__title">Лендинги и UI вечерами — HTML, Vue, React</h1>
-        <p class="hero__lead">
-          Кишинёв / удалёнка. Чистая вёрстка, Vue и React, починка AI-сгенерированных сайтов. 2–3 часа в день — с дедлайном.
-        </p>
+        <h1 class="hero__title" data-i18n="heroTitle"></h1>
+        <p class="hero__lead" data-i18n="heroLead"></p>
         <div class="hero__cta">
-          <a class="btn btn--primary" href="https://t.me/username" rel="noopener">Написать в Telegram</a>
-          <a class="btn btn--ghost" href="#" data-scroll="demos">Смотреть демо</a>
+          <a class="btn btn--primary" href="https://t.me/username" rel="noopener" data-i18n="ctaTelegram"></a>
+          <a class="btn btn--ghost" href="#" data-scroll="demos" data-i18n="ctaDemos"></a>
         </div>
       </div>
     </section>
 
     <section id="demos" class="section reveal">
       <div class="section__inner">
-        <h2 class="section__title">Демо</h2>
-        <p class="section__lead">Три ниши + AI rescue. Вымышленные бренды Chișinău.</p>
+        <h2 class="section__title" data-i18n="demosTitle"></h2>
+        <p class="section__lead" data-i18n="demosLead"></p>
         <ul class="demo-list">
           <li>
             <a href="/dental/">
               <strong>DentaLux</strong>
-              <span>HTML · стоматология</span>
+              <span data-i18n="demoDental"></span>
             </a>
           </li>
           <li>
             <a href="/salon/">
               <strong>Lumina Atelier</strong>
-              <span>Vue 3 · салон · RO/RU</span>
+              <span data-i18n="demoSalon"></span>
             </a>
           </li>
           <li>
             <a href="/cafe/">
               <strong>Grain &amp; Steam</strong>
-              <span>React · кафе · меню</span>
+              <span data-i18n="demoCafe"></span>
             </a>
           </li>
           <li>
             <a href="/ai-rescue/">
               <strong>AI Rescue</strong>
-              <span>До / после починки</span>
+              <span data-i18n="demoRescue"></span>
             </a>
           </li>
         </ul>
       </div>
     </section>
 
-    <section id="prices" class="section section--alt reveal">
+    <section id="how" class="section section--alt reveal">
       <div class="section__inner">
-        <h2 class="section__title">Стартовые цены</h2>
-        <p class="section__lead">Предоплата 50%. Два раунда правок, дальше — почасовка.</p>
+        <h2 class="section__title" data-i18n="howTitle"></h2>
+        <p class="section__lead" data-i18n="howLead"></p>
+        <ol class="how-list">
+          <li data-i18n="how1"></li>
+          <li data-i18n="how2"></li>
+          <li data-i18n="how3"></li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="prices" class="section reveal">
+      <div class="section__inner">
+        <h2 class="section__title" data-i18n="pricesTitle"></h2>
+        <p class="section__lead" data-i18n="pricesLead"></p>
         <dl class="price-list">
-          <div><dt>Вёрстка лендинга</dt><dd>€200–250</dd></div>
-          <div><dt>Vue-лендинг</dt><dd>€280–350</dd></div>
-          <div><dt>React-лендинг / UI</dt><dd>€300–380</dd></div>
-          <div><dt>AI rescue</dt><dd>€180–300</dd></div>
-          <div><dt>Правки</dt><dd>€25–30/ч</dd></div>
-          <div><dt>Retainer 8–10 ч/мес</dt><dd>€200–250</dd></div>
+          <div><dt data-i18n="priceHtml"></dt><dd>€200–250</dd></div>
+          <div><dt data-i18n="priceVue"></dt><dd>€280–350</dd></div>
+          <div><dt data-i18n="priceReact"></dt><dd>€300–380</dd></div>
+          <div><dt data-i18n="priceRescue"></dt><dd>€180–300</dd></div>
+          <div><dt data-i18n="priceHourly"></dt><dd>€25–30</dd></div>
+          <div><dt data-i18n="priceRetainer"></dt><dd>€200–250</dd></div>
         </dl>
       </div>
     </section>
 
-    <section id="contact" class="section reveal">
+    <section id="contact" class="section section--alt reveal">
       <div class="section__inner">
-        <h2 class="section__title">Связь</h2>
-        <p class="section__lead">Замени ссылку Telegram на свою в этом файле перед рассылкой.</p>
-        <a class="btn btn--primary" href="https://t.me/username" rel="noopener">Telegram</a>
-        <p class="hint">Стек: HTML/CSS · Vue 3 · React · вечерний график · Chișinău</p>
+        <h2 class="section__title" data-i18n="contactTitle"></h2>
+        <p class="section__lead" data-i18n="contactLead"></p>
+        <a class="btn btn--primary" href="https://t.me/username" rel="noopener" data-i18n="ctaTelegram"></a>
+        <p class="hint" data-i18n="contactHint"></p>
       </div>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>OG Frontend · портфолио подработки · см. docs/PLAYBOOK.md</p>
+    <p data-i18n="footer"></p>
   </footer>
+  <script src="js/i18n.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
