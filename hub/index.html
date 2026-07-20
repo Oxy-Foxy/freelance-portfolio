@@ -18,10 +18,22 @@
         <a href="#" data-scroll="prices" data-i18n="navPrices"></a>
         <a href="#" data-scroll="contact" data-i18n="navContact"></a>
       </nav>
-      <div class="lang" role="group" aria-label="Language">
-        <button type="button" data-lang="ru">RU</button>
-        <button type="button" data-lang="ro">RO</button>
-        <button type="button" data-lang="en">EN</button>
+      <div class="lang" data-lang-dropdown>
+        <button
+          type="button"
+          class="lang__toggle"
+          aria-haspopup="listbox"
+          aria-expanded="false"
+          data-lang-toggle
+        >
+          <span data-lang-current>RU</span>
+          <span class="lang__chevron" aria-hidden="true"></span>
+        </button>
+        <ul class="lang__menu" role="listbox" hidden data-lang-menu>
+          <li role="option"><button type="button" data-lang="ru">RU</button></li>
+          <li role="option"><button type="button" data-lang="ro">RO</button></li>
+          <li role="option"><button type="button" data-lang="en">EN</button></li>
+        </ul>
       </div>
     </div>
   </header>

@@ -85,26 +85,75 @@ a {
 }
 
 .lang {
-  display: flex;
-  gap: 0.25rem;
+  position: relative;
 }
 
-.lang button {
+.lang__toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
   font: inherit;
   font-size: 0.78rem;
   font-weight: 700;
-  padding: 0.35rem 0.5rem;
+  padding: 0.35rem 0.55rem;
   border: 1px solid rgba(20, 32, 26, 0.14);
   background: transparent;
-  color: var(--color-muted);
+  color: var(--color-ink);
   cursor: pointer;
   border-radius: var(--radius);
 }
 
-.lang button.is-active,
-.lang button:hover {
-  color: var(--color-ink);
+.lang__toggle:hover,
+.lang.is-open .lang__toggle {
   border-color: var(--color-accent);
+}
+
+.lang__chevron {
+  width: 0;
+  height: 0;
+  border-left: 4px solid transparent;
+  border-right: 4px solid transparent;
+  border-top: 5px solid currentColor;
+  opacity: 0.7;
+}
+
+.lang.is-open .lang__chevron {
+  transform: rotate(180deg);
+}
+
+.lang__menu {
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.35rem);
+  margin: 0;
+  padding: 0.25rem;
+  list-style: none;
+  min-width: 100%;
+  background: #f7fbf8;
+  border: 1px solid rgba(20, 32, 26, 0.12);
+  border-radius: var(--radius);
+  box-shadow: 0 8px 20px rgba(20, 32, 26, 0.08);
+  z-index: 30;
+}
+
+.lang__menu button {
+  width: 100%;
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 700;
+  text-align: left;
+  padding: 0.45rem 0.55rem;
+  border: 0;
+  background: transparent;
+  color: var(--color-muted);
+  cursor: pointer;
+  border-radius: calc(var(--radius) - 1px);
+}
+
+.lang__menu button:hover,
+.lang__menu button.is-active {
+  color: var(--color-ink);
+  background: rgba(31, 107, 79, 0.1);
 }
 
 .hero {

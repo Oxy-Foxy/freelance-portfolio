@@ -1,5 +1,6 @@
 const STORAGE_KEY = "og-hub-lang";
 const SUPPORTED = ["ru", "ro", "en"];
+const LABELS = { ru: "RU", ro: "RO", en: "EN" };
 
 function scrollToId(id) {
   const el = document.getElementById(id);
@@ -14,6 +15,16 @@ function detectLang() {
   if (nav.startsWith("ro")) return "ro";
   if (nav.startsWith("en")) return "en";
   return "ru";
+}
+
+function setDropdownOpen(open) {
+  const root = document.querySelector("[data-lang-dropdown]");
+  const toggle = document.querySelector("[data-lang-toggle]");
+  const menu = document.querySelector("[data-lang-menu]");
+  if (!root || !toggle || !menu) return;
+  menu.hidden = !open;
+  toggle.setAttribute("aria-expanded", open ? "true" : "false");
+  root.classList.toggle("is-open", open);
 }
 
 function applyI18n(lang) {
@@ -31,11 +42,17 @@ function applyI18n(lang) {
     if (dict[key] != null) el.setAttribute("aria-label", dict[key]);
   });
 
-  document.querySelectorAll(".lang [data-lang]").forEach((btn) => {
-    btn.classList.toggle("is-active", btn.getAttribute("data-lang") === lang);
+  const current = document.querySelector("[data-lang-current]");
+  if (current) current.textContent = LABELS[lang] || lang.toUpperCase();
+
+  document.querySelectorAll(".lang__menu [data-lang]").forEach((btn) => {
+    const active = btn.getAttribute("data-lang") === lang;
+    btn.classList.toggle("is-active", active);
+    btn.parentElement?.setAttribute("aria-selected", active ? "true" : "false");
   });
 
   localStorage.setItem(STORAGE_KEY, lang);
+  setDropdownOpen(false);
 }
 
 document.querySelectorAll("[data-scroll]").forEach((el) => {
@@ -45,8 +62,28 @@ document.querySelectorAll("[data-scroll]").forEach((el) => {
   });
 });
 
-document.querySelectorAll(".lang [data-lang]").forEach((btn) => {
-  btn.addEventListener("click", () => applyI18n(btn.getAttribute("data-lang")));
+const langToggle = document.querySelector("[data-lang-toggle]");
+const langRoot = document.querySelector("[data-lang-dropdown]");
+
+langToggle?.addEventListener("click", (e) => {
+  e.stopPropagation();
+  const open = langToggle.getAttribute("aria-expanded") !== "true";
+  setDropdownOpen(open);
+});
+
+document.querySelectorAll(".lang__menu [data-lang]").forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+    applyI18n(btn.getAttribute("data-lang"));
+  });
+});
+
+document.addEventListener("click", (e) => {
+  if (langRoot && !langRoot.contains(e.target)) setDropdownOpen(false);
+});
+
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") setDropdownOpen(false);
 });
 
 document.querySelectorAll(".reveal").forEach((el) => {
