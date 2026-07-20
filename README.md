@@ -1,5 +1,7 @@
 # Freelance portfolio (MD side hustle demos)
 
+**Live:** https://freelance-portfolio-ten-psi.vercel.app
+
 Демо-лендинги + хаб + playbook для подработки (HTML / Vue / React).  
 Figma MCP не используется — референсы Community в [`docs/MOCKUPS.md`](docs/MOCKUPS.md).  
 Правила дизайна: [`docs/DESIGN_RULES.md`](docs/DESIGN_RULES.md).  
@@ -9,11 +11,11 @@ Figma MCP не используется — референсы Community в [`do
 
 | Path | Stack | Brand |
 |------|-------|-------|
-| `/dental/` | HTML/CSS | DentaLux |
-| `/salon/` | Vue 3 | Lumina Atelier |
-| `/cafe/` | React | Grain & Steam |
-| `/ai-rescue/` | HTML | Before / After |
-| `/` | HTML | OG Frontend (hub) |
+| [/dental/](https://freelance-portfolio-ten-psi.vercel.app/dental/) | HTML/CSS | DentaLux |
+| [/salon/](https://freelance-portfolio-ten-psi.vercel.app/salon/) | Vue 3 | Lumina Atelier |
+| [/cafe/](https://freelance-portfolio-ten-psi.vercel.app/cafe/) | React | Grain & Steam |
+| [/ai-rescue/](https://freelance-portfolio-ten-psi.vercel.app/ai-rescue/) | HTML | Before / After |
+| [/](https://freelance-portfolio-ten-psi.vercel.app/) | HTML | OG Frontend (hub) |
 
 ## Local
 

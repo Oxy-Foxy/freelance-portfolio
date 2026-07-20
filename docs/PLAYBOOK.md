@@ -4,15 +4,15 @@
 
 ## Ссылки на демо
 
-После деплоя подставь URL:
+Публичный сайт: **https://freelance-portfolio-ten-psi.vercel.app**
 
-| Страница | Путь |
-|----------|------|
-| Хаб | `/` |
-| DentaLux (HTML) | `/dental/` |
-| Lumina Atelier (Vue) | `/salon/` |
-| Grain & Steam (React) | `/cafe/` |
-| AI Rescue | `/ai-rescue/` |
+| Страница | URL |
+|----------|-----|
+| Хаб | https://freelance-portfolio-ten-psi.vercel.app/ |
+| DentaLux (HTML) | https://freelance-portfolio-ten-psi.vercel.app/dental/ |
+| Lumina Atelier (Vue) | https://freelance-portfolio-ten-psi.vercel.app/salon/ |
+| Grain & Steam (React) | https://freelance-portfolio-ten-psi.vercel.app/cafe/ |
+| AI Rescue | https://freelance-portfolio-ten-psi.vercel.app/ai-rescue/ |
 
 Локально: `npm run build && npm run preview` из корня репо (см. README).
 
