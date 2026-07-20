@@ -16,7 +16,7 @@ window.HUB_I18N = {
     aboutTitle: "Обо мне",
     aboutRole: "Frontend Web Developer",
     aboutLead:
-      "Я Oxana Garascenco — фронтенд-разработчик с опытом около 8 лет. Делаю лендинги и интерфейсы на HTML, Vue и React: от чистой вёрстки до живого UI. Сейчас работаю фронтендером в KIVORK и беру проекты под ключ — аккуратно, с понятным сроком и без хаоса в правках.",
+      "Я Oxana Glasu — фронтенд-разработчик с опытом около 8 лет. Делаю лендинги и интерфейсы на HTML, Vue и React: от чистой вёрстки до живого UI. Сейчас работаю фронтендером в KIVORK и беру проекты под ключ — аккуратно, с понятным сроком и без хаоса в правках.",
     aboutFact1: "Стек: HTML/CSS, Vue 3, React",
     aboutFact2: "Frontend Developer в KIVORK (с 2021)",
     aboutFact3: "Бельцы · удалённая работа · Молдова",
@@ -46,7 +46,7 @@ window.HUB_I18N = {
     contactLead:
       "Напишите кратко: что нужно (лендинг / Vue / React / починка), срок и ссылку на референс — отвечу с оценкой.",
     contactHint: "Стек: HTML/CSS · Vue 3 · React · Бельцы / remote",
-    footer: "OG Frontend · Oxana Garascenco · Бельцы",
+    footer: "OG Frontend · Oxana Glasu · Бельцы",
   },
   ro: {
     docTitle: "OG Frontend — landing-uri HTML, Vue, React",
@@ -65,7 +65,7 @@ window.HUB_I18N = {
     aboutTitle: "Despre mine",
     aboutRole: "Frontend Web Developer",
     aboutLead:
-      "Sunt Oxana Garascenco — dezvoltatoare frontend cu aproximativ 8 ani de experiență. Fac landing-uri și interfețe în HTML, Vue și React: de la layout curat la UI funcțional. Lucrez ca frontend developer la KIVORK și preiau proiecte la cheie — cu termen clar și fără haos în revizii.",
+      "Sunt Oxana Glasu — dezvoltatoare frontend cu aproximativ 8 ani de experiență. Fac landing-uri și interfețe în HTML, Vue și React: de la layout curat la UI funcțional. Lucrez ca frontend developer la KIVORK și preiau proiecte la cheie — cu termen clar și fără haos în revizii.",
     aboutFact1: "Stack: HTML/CSS, Vue 3, React",
     aboutFact2: "Frontend Developer la KIVORK (din 2021)",
     aboutFact3: "Bălți · remote · Moldova",
@@ -95,7 +95,7 @@ window.HUB_I18N = {
     contactLead:
       "Scrie pe scurt: ce ai nevoie (landing / Vue / React / reparare), termenul și un link de referință — răspund cu o estimare.",
     contactHint: "Stack: HTML/CSS · Vue 3 · React · Bălți / remote",
-    footer: "OG Frontend · Oxana Garascenco · Bălți",
+    footer: "OG Frontend · Oxana Glasu · Bălți",
   },
   en: {
     docTitle: "OG Frontend — HTML, Vue, React landings",
@@ -114,7 +114,7 @@ window.HUB_I18N = {
     aboutTitle: "About me",
     aboutRole: "Frontend Web Developer",
     aboutLead:
-      "I’m Oxana Garascenco — a frontend developer with about 8 years of experience. I build landings and interfaces with HTML, Vue and React: from clean layout to interactive UI. I work as a frontend developer at KIVORK and take on end-to-end projects — clear timelines, no revision chaos.",
+      "I’m Oxana Glasu — a frontend developer with about 8 years of experience. I build landings and interfaces with HTML, Vue and React: from clean layout to interactive UI. I work as a frontend developer at KIVORK and take on end-to-end projects — clear timelines, no revision chaos.",
     aboutFact1: "Stack: HTML/CSS, Vue 3, React",
     aboutFact2: "Frontend Developer at KIVORK (since 2021)",
     aboutFact3: "Bălți · remote · Moldova",
@@ -144,6 +144,6 @@ window.HUB_I18N = {
     contactLead:
       "Send a short note: what you need (landing / Vue / React / fix), timeline and a reference link — I’ll reply with an estimate.",
     contactHint: "Stack: HTML/CSS · Vue 3 · React · Bălți / remote",
-    footer: "OG Frontend · Oxana Garascenco · Bălți",
+    footer: "OG Frontend · Oxana Glasu · Bălți",
   },
 };
