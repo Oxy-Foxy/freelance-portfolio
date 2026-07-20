@@ -16,7 +16,7 @@
 
 Локально: `npm run build && npm run preview` из корня репо (см. README).
 
-Перед рассылкой: в `hub/index.html` замени `https://t.me/username` на свой Telegram.
+Telegram на хабе: https://t.me/OxanaGlasu
 
 ## Стартовые цены
 
