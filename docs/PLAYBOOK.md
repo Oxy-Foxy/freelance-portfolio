@@ -12,7 +12,6 @@
 | DentaLux (HTML) | https://freelance-portfolio-ten-psi.vercel.app/dental/ |
 | Lumina Atelier (Vue) | https://freelance-portfolio-ten-psi.vercel.app/salon/ |
 | Grain & Steam (React) | https://freelance-portfolio-ten-psi.vercel.app/cafe/ |
-| AI Rescue | https://freelance-portfolio-ten-psi.vercel.app/ai-rescue/ |
 
 Локально: `npm run build && npm run preview` из корня репо (см. README).
 

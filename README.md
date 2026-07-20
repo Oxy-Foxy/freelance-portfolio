@@ -14,7 +14,6 @@ Figma MCP не используется — референсы Community в [`do
 | [/dental/](https://freelance-portfolio-ten-psi.vercel.app/dental/) | HTML/CSS | DentaLux |
 | [/salon/](https://freelance-portfolio-ten-psi.vercel.app/salon/) | Vue 3 | Lumina Atelier |
 | [/cafe/](https://freelance-portfolio-ten-psi.vercel.app/cafe/) | React | Grain & Steam |
-| [/ai-rescue/](https://freelance-portfolio-ten-psi.vercel.app/ai-rescue/) | HTML | Before / After |
 | [/](https://freelance-portfolio-ten-psi.vercel.app/) | HTML | OG Frontend (hub) |
 
 ## Local
