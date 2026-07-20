@@ -1,5 +1,6 @@
 {
-  "buildCommand": "npm run build",
+  "installCommand": "npm install && npm run install:all",
+  "buildCommand": "npm run build:salon && npm run build:cafe && node scripts/assemble-dist.mjs",
   "outputDirectory": "dist",
   "framework": null
 }
